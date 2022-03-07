@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter&family=Lato:wght@400;700&display=swap');
+
+:root{
+    --pr-color: #179BE5;
+    --sec-color: #262626;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #f0f0f0;
+}
