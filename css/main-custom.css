@@ -8,3 +8,45 @@ body{
     font-family: 'Lato', sans-serif;
     background-color: #f0f0f0;
 }
+
+/* NAVBAR */
+.nav-social{
+    background-color: #f0f0f0;
+}
+
+.social-ul{
+    flex-direction: row;
+}
+.social-ul .nav-item{
+    padding: 0 0.5em;
+}
+.social-ul .nav-item .nav-link i{
+    font-size: 2em;
+    margin: 0 0.3em;
+    color: var(--pr-color);
+}
+
+.nav-social .btn-client{
+    background-color: var(--pr-color);
+    padding: 0.5em 1em;
+    border-radius: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #f0f0f0;
+}
+.nav-social .btn-client span{
+    padding-right: 1em;
+}
+
+.navbar-links{
+    padding: 0;
+    background-color: var(--sec-color);
+}
+.links-ul .nav-item .nav-link{
+    font-size: 1.2em;
+    color: #f0f0f0;
+    padding: 0.5em 1em;
+}
+.links-ul .nav-item .nav-link:hover{
+    border-bottom: 3px solid var(--pr-color);
+}
