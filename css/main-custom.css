@@ -39,6 +39,11 @@ body{
     padding-right: 1em;
 }
 
+.navbar-dark .navbar-toggler-icon{
+    background-image: url('../img/svg/menu.svg');
+    width: 2em; 
+    height: 2em;
+}
 .navbar-links{
     padding: 0;
     background-color: var(--sec-color);
@@ -50,4 +55,20 @@ body{
 }
 .links-ul .nav-item .nav-link:hover{
     border-bottom: 3px solid var(--pr-color);
+}
+
+/* MEDIA FOR - SM -  */
+@media only screen and (max-width:767px){
+    .navbar-logo-img img{
+        height: 75px;
+    }
+}
+@media only screen and (max-width: 375px){
+    .navbar-logo-img img{
+        height: 50px;
+    }
+    .navbar-dark .navbar-toggler-icon{
+        width: 1.5em; 
+        height: 1.5em;
+    }
 }
