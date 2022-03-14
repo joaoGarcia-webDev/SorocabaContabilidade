@@ -57,6 +57,12 @@ body{
     border-bottom: 3px solid var(--pr-color);
 }
 
+/* SLIDER */
+.carousel-item img{
+    height: 70gitvh;
+    object-fit: cover;
+}
+
 /* MEDIA FOR - SM -  */
 @media only screen and (max-width:767px){
     .navbar-logo-img img{
