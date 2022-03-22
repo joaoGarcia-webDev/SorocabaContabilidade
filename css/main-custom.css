@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter&family=Lato:wght@400;700&display=swap');
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Bitter', serif;
+font-family: 'Lato', sans-serif; */
 
 :root{
     --pr-color: #179BE5;
@@ -13,6 +16,7 @@ body{
 .nav-social{
     background-color: #f0f0f0;
     padding: 0.7em 0;
+    transition: 0.3s ease;
 }
 
 .social-ul{
@@ -47,6 +51,7 @@ body{
 .navbar-links{
     padding: 0;
     background-color: var(--sec-color);
+    transition: 0.3s ease;
 }
 .links-ul .nav-item .nav-link{
     font-size: 1.2em;
@@ -59,16 +64,63 @@ body{
 
 /* SLIDER */
 .carousel-item img{
-    height: 70gitvh;
+    height: 75vh;
     object-fit: cover;
 }
+.carousel-header{
+    text-align: left;
+    bottom: auto;
+    top: 40%;
+    transform: translateY(-60%);
+}
+.carousel-header .carousel-main-title{
+    font-size: 9em;
+    font-family: 'Bebas Neue', 'Lato', sans-serif;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    margin-bottom: -0.25em;
+    transition: 0.2s ease-in;
+}
+.carousel-header:hover .carousel-main-title{
+    color: var(--pr-color);
+}
 
+.carousel-header .carousel-sub-title{
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 1.5em;
+}
+.carousel-header .btn{
+    background-color: var(--pr-color);
+    padding: 0.3em 1.2em;
+    font-size: 1.5em;
+    border-radius: 35px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-weight: 800;
+    color: #f0f0f0;
+}
+.carousel-inner .carousel-waves img{
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+}
+/* MEDIA FOR - MD -  */
+@media only screen and (max-width:991px){
+    .carousel-header h1.carousel-main-title{
+        font-size: 7em;
+    }
+}
 /* MEDIA FOR - SM -  */
 @media only screen and (max-width:767px){
     .navbar-logo-img img{
         height: 75px;
     }
 }
+/* MEDIA FOR - XSM -  */
 @media only screen and (max-width: 375px){
     .navbar-logo-img img{
         height: 50px;
