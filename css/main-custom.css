@@ -11,6 +11,14 @@ body{
     font-family: 'Lato', sans-serif;
     background-color: #f0f0f0;
 }
+.head-title{
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--pr-color);
+    font-size: 3.5em;
+}
+.flow-text{
+    font-family: 'Lato', sans-serif;
+}
 
 /* NAVBAR */
 .nav-social{
@@ -108,17 +116,51 @@ body{
     height: auto;
     width: 100%;
 }
+
+/* SERVICES */
+.services-card{
+    background-color: #fff;
+    padding: 1em 1.5em;
+    margin: 0.5em 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.services-card:not(.principal-card){
+    width: 49%;
+}
+.services-card .head-title{
+    font-size: 2em;
+    color: var(--sec-color);
+}
+.services-card .flow-text{
+    font-size: 1.2em;
+}
+
+/* ABOUT */
+.about-text{
+    font-size: 1.3em;
+    padding: 1em 1.5em;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    z-index: 99;
+}
+.about-content img{
+    z-index: -1;
+}
+
 /* MEDIA FOR - MD -  */
-@media only screen and (max-width:991px){
+@media screen and (max-width:991px){
     .carousel-header h1.carousel-main-title{
         font-size: 7em;
     }
 }
 /* MEDIA FOR - SM -  */
-@media only screen and (max-width:767px){
+@media screen and (max-width:767px){
     .navbar-logo-img img{
         height: 75px;
     }
+    .services-card:not(.principal-card){
+        width: 100%;
+    } 
 }
 /* MEDIA FOR - XSM -  */
 @media only screen and (max-width: 375px){
@@ -129,4 +171,5 @@ body{
         width: 1.5em; 
         height: 1.5em;
     }
+    
 }
