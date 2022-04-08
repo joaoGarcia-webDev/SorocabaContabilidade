@@ -136,7 +136,7 @@ body{
 }
 
 /* ABOUT */
-.about-content{
+.about-content, .testimonial-content{
     margin: 10em 0;
 }
 .about-text{
@@ -148,6 +148,24 @@ body{
 }
 .about-content img{
     z-index: -1;
+}
+
+/* TESTIMONIALS */
+.testimonial-text{
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 1em 1.5em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.testimonial-text svg{
+    left: 35px;
+    filter: drop-shadow(3px 3px 8px rgba(0, 0, 0, 0.24));
+}
+.user-testimonial img{
+    border-radius: 50%;
+    background-color: #fff;
+    object-fit: cover;
+    margin-right: 25px;
 }
 
 /* MEDIA FOR - MD -  */
