@@ -168,6 +168,45 @@ body{
     margin-right: 25px;
 }
 
+/* CONTACT CARD */
+.contact-card .card{
+    flex-direction: row;
+}
+.contact-card .card >:not(.map){
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1rem 1.5rem;
+}
+.contact-card .card .head-title{
+    color: var(--sec-color);
+    font-size: 2em;
+}
+.contact-card .card .list-contact{
+    list-style: none;
+    padding: 0;
+}
+.contact-card .card .list-contact li{
+    font-size: 1.5em;
+    margin: 0.4em 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.contact-card .card .list-contact li i{
+    margin-right: 0.3em;
+    color: var(--pr-color);
+    font-size: 1.5em;
+}
+.contact-card .card .list-contact li a{
+    color: var(--pr-color);
+
+}
+.contact-card .card .map{
+    padding: 0;
+}
+.contact-card .card .map iframe{
+    width: 100%;
+    height: 100%;
+}
 /* MEDIA FOR - MD -  */
 @media screen and (max-width:991px){
     .carousel-header h1.carousel-main-title{
