@@ -81,35 +81,52 @@ body{
 .carousel-header{
     text-align: left;
     bottom: auto;
-    top: 40%;
+    top: 50%;
     transform: translateY(-60%);
 }
+.carousel-over-title{
+    font-size: 1.7em;
+    font-weight: 400;
+    margin: 0;
+}
 .carousel-header .carousel-main-title{
-    font-size: 9em;
+    font-size: 7em;
     font-family: 'Bebas Neue', 'Lato', sans-serif;
     letter-spacing: 0.05em;
     font-weight: 400;
     margin-bottom: -0.25em;
     transition: 0.2s ease-in;
 }
-.carousel-header:hover .carousel-main-title{
+.carousel-header .carousel-main-title .typed-text{
     color: var(--pr-color);
 }
 
 .carousel-header .carousel-sub-title{
-    font-size: 1.5em;
-    font-weight: 400;
+    font-size: 1.3em;
+    font-weight: 300;
     margin-bottom: 1.5em;
+    width: 40%;
+}
+.carousel-header .carousel-sub-title strong{
+    color: var(--pr-color);
+    font-weight: 700;
 }
 .carousel-header .btn{
-    background-color: var(--pr-color);
-    padding: 0.3em 1.2em;
-    font-size: 1.5em;
+    padding: 0.5em 1.5em;
+    font-size: 1.3em;
     border-radius: 35px;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    font-weight: 800;
-    color: #f0f0f0;
+    font-weight: 400;
+    border: 3px solid var(--pr-color);
+    color: #FFF;
+    backdrop-filter: blur(8px);
+    background-color: transparent;
+    transition: .2s ease;
+}
+.carousel-header .btn:hover{
+    background-color: var(--pr-color);
+    transform: translate(-3px, 3px);
 }
 .carousel-inner .carousel-waves img{
     position: absolute;
@@ -146,6 +163,7 @@ body{
     font-size: 1.3em;
     padding: 1em 1.5em;
     background-color: #fff;
+    border: 10px solid var(--pr-color);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     z-index: 99;
 }

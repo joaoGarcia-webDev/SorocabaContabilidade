@@ -84,10 +84,11 @@
                 <div class="carousel-item active">
                     <img src="img/slider.png" class="d-block w-100" alt="img/slider.png">
                     <div class="carousel-caption carousel-header d-none d-md-block">
-                        <h1 class="carousel-main-title">Main Text</h1>
-                        <h2 class="carousel-sub-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
+                        <h2 class="carousel-over-title">A Sorocaba Contabilidade faz:</h2>
+                        <h1 class="carousel-main-title">A melhor <span class="typed-text"></span></h1>
+                        <h3 class="carousel-sub-title">Temos tudo o que você precisa para sua empresa. Na <strong>Sorocaba Contabilidade</strong> fornecemos o melhor trabalho da região</h3>
                         
-                        <a class="btn btn-primary" href="#" role="button">Button</a>
+                        <a class="btn btn-primary" href="#about" role="button">Saiba mais</a>
                     </div>
                 </div>
 
@@ -95,7 +96,7 @@
                     <img src="img/svg/wave.svg" aria-hidden="true" alt="">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#slider-controls"
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#slider-controls"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -104,7 +105,7 @@
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-            </button>
+            </button> -->
         </div>
     </header>
     <main class="container-xl px-3 px-md-5 px-lg-0">
@@ -301,6 +302,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <!-- TYPED JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".typed-text", {
+            strings: ['Contabilidade', 'Gestão', 'Consultoria'],
+            typeSpeed: 150,
+            backSpeed: 100,
+            showCursor: false,
+            loop: true
+        })
+    </script>
 </body>
 
 </html>
