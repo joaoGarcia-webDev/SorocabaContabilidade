@@ -111,7 +111,7 @@ body{
     color: var(--pr-color);
     font-weight: 700;
 }
-.carousel-header .btn{
+.carousel-header .btn, .form-contact .btn{
     padding: 0.5em 1.5em;
     font-size: 1.3em;
     border-radius: 35px;
@@ -224,7 +224,19 @@ body{
 .contact-card .card .list-contact li a:hover{
     color: var(--pr-color);
 }
-
+.form-contact .btn{
+    color: var(--pr-color);
+    padding: 0.3em 0.7em;
+    font-size: 1.2em;
+    font-weight: 400;
+    border-radius: 10px;
+    background-color: var(--pr-color);
+    color: #fff;
+    border: none;
+}
+.form-contact .btn:hover{
+    box-shadow: inset 4px 4px #21aeff, inset -4px -4px #1074ad, rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 .contact-card .card .map{
     padding: 0;
 }
@@ -235,6 +247,7 @@ body{
 
 /* FOOTER SECTION */
 footer{
+    margin-top: 10em;
     background-color: var(--sec-color);
     color: #fff;
 }
