@@ -192,41 +192,81 @@ body{
 /* CONTACT CARD */
 .contact-card .card{
     flex-direction: row;
+    background-color: transparent;
+    border: none;
 }
-.contact-card .card >:not(.map){
+.contact-card .card >:not(.form-side){
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 1rem 1.5rem;
+    color: #fff;
+    background-color: var(--pr-color);
+    position: relative;
+    overflow: hidden;
+}
+.contact-card .card .form-side{
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
 }
 .contact-card .card .head-title{
-    color: var(--sec-color);
-    font-size: 2em;
+    color: #fff;
+    font-weight: 400;
+    font-size: 2.5em;
 }
 .contact-card .card .list-contact{
     list-style: none;
     padding: 0;
 }
 .contact-card .card .list-contact li{
-    font-size: 1.5em;
-    margin: 0.4em 0;
+    margin: 1.7em 0;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
+.contact-card .card .list-contact li .icon-wrapp{
+    width: 50px;
+    height: 50px;
+    margin-right: .5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    transition: .3s ease;
+}
 .contact-card .card .list-contact li i{
-    margin-right: 0.3em;
-    color: var(--pr-color);
     font-size: 1.5em;
 }
-.contact-card .card .list-contact li a{
-    color: var(--sec-color);
+.contact-card .card .list-contact li >:not(.icon-wrapp){
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
     transition: 0.2s ease;
 }
+.contact-card .card .list-contact li:hover .icon-wrapp{
+    background-color: #fff;
+    color: var(--pr-color);
+}
 .contact-card .card .list-contact li a:hover{
+    text-decoration: underline;
+}
+.back-ico{
+    position: absolute;
+    left: -30px;
+    bottom: -120px;
+    color: #f0f0f0;
+    font-size: 200px;
+    transform: rotate(15deg);
+    opacity: .3;
+    z-index: 0;
+}
+.form-side .form-contact .head-title{
+    font-family: 'Lato', sans-serif;
+    font-size: 2em;
     color: var(--pr-color);
 }
 .form-contact .btn{
     color: var(--pr-color);
-    padding: 0.3em 0.7em;
+    padding: 0.3em 1em;
     font-size: 1.2em;
     font-weight: 400;
     border-radius: 10px;
@@ -236,13 +276,6 @@ body{
 }
 .form-contact .btn:hover{
     box-shadow: inset 4px 4px #21aeff, inset -4px -4px #1074ad, rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.contact-card .card .map{
-    padding: 0;
-}
-.contact-card .card .map iframe{
-    width: 100%;
-    height: 100%;
 }
 
 /* FOOTER SECTION */
