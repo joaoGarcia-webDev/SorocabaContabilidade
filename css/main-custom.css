@@ -80,6 +80,7 @@ body{
 }
 .carousel-header{
     text-align: left;
+    left: 10%;
     bottom: auto;
     top: 50%;
     transform: translateY(-60%);
@@ -87,14 +88,15 @@ body{
 .carousel-over-title{
     font-size: 1.7em;
     font-weight: 400;
-    margin: 0;
+    margin-bottom: 0.7em;
 }
 .carousel-header .carousel-main-title{
     font-size: 7em;
     font-family: 'Bebas Neue', 'Lato', sans-serif;
     letter-spacing: 0.05em;
     font-weight: 400;
-    margin-bottom: -0.25em;
+    margin-bottom: -0.1em;
+    line-height: 0.9;
     transition: 0.2s ease-in;
 }
 .carousel-header .carousel-main-title .typed-text{
@@ -194,6 +196,9 @@ body{
     transform: translateX(0px);
     padding: 1.5em 5em;
     transition-delay: .3s;
+}
+.tab-content.active .services-title{
+    font-size: 3em;
 }
 .tab-content.active p{
     font-size: 1.5em;
@@ -370,29 +375,75 @@ footer .map-span{
     justify-content: space-around;
     margin-top: 5em;
 }
-/* MEDIA FOR - MD -  */
-@media screen and (max-width:991px){
+/* MEDIA FOR - LG -  */
+@media (max-width: 992px) {
+    .carousel-header .carousel-sub-title{
+        width: 80%;
+    }
     .carousel-header h1.carousel-main-title{
-        font-size: 7em;
+        font-size: 5em;
+        line-height: 0.9;
+    }
+    .carousel-over-title{
+        margin-bottom: 0.5em;
+    }
+    .services-tab .tabs-btn{
+        font-size: 1.1em;
+    }
+    .tab-content.active{
+        padding: 1.5em 2em;
+    }
+    .tab-content.active p{
+        font-size: 1.2em;
+    }
+    .tab-content.active .services-title{
+        font-size: 2.7em;
     }
 }
-/* MEDIA FOR - SM -  */
-@media screen and (max-width:767px){
-    .navbar-logo-img img{
-        height: 75px;
-    }
-    .services-card:not(.principal-card){
-        width: 100%;
-    } 
-}
-/* MEDIA FOR - XSM -  */
-@media only screen and (max-width: 375px){
+/* MEDIA FOR - MD -  */
+@media (max-width: 768px) {
     .navbar-logo-img img{
         height: 50px;
     }
+    .carousel-over-title{
+        font-size: 1.5em;
+    }
+    .carousel-header .carousel-main-title{
+        margin-bottom: 0;
+    }
+    .carousel-header h1.carousel-main-title{
+        font-size: 4em;
+    }
+    .tab-hero{
+        border: 3px solid var(--pr-color);
+    }
+    .services-tab .tabs-btn.active{
+        border: 3px solid var(--pr-color);
+    }
+    .tab-content.active{
+        padding: 1.5em 2em;
+        position: static!important;
+    }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
     .navbar-dark .navbar-toggler-icon{
         width: 1.5em; 
         height: 1.5em;
     }
-    
+    .carousel-header .carousel-sub-title{
+        width: 100%;
+    }
+    .carousel-over-title{
+        font-size: 1.3em;
+    }
+    .carousel-header h1.carousel-main-title{
+        font-size: 3.6em;
+    }
+    .tab-content.active .services-title{
+        font-size: 2.5em;
+    }
+    .tab-hero{
+        border: 3px solid var(--pr-color);
+    }
 }
