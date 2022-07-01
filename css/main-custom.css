@@ -255,6 +255,7 @@ body{
     background-color: #fff;
     position: relative;
     overflow: hidden;
+    padding: 4em 8em;
 }
 .contact-card .card .head-title{
     color: #fff;
@@ -375,6 +376,13 @@ footer .map-span{
     justify-content: space-around;
     margin-top: 5em;
 }
+
+/* MEDIA FOR - XLG -  */
+@media (max-width: 1200px) {
+    .contact-card .card .form-side{
+        padding: 4em 5em;
+    }
+}
 /* MEDIA FOR - LG -  */
 @media (max-width: 992px) {
     .carousel-header .carousel-sub-title{
@@ -398,7 +406,7 @@ footer .map-span{
     }
     .tab-content.active .services-title{
         font-size: 2.7em;
-    }
+    } 
 }
 /* MEDIA FOR - MD -  */
 @media (max-width: 768px) {
@@ -445,5 +453,8 @@ footer .map-span{
     }
     .tab-hero{
         border: 3px solid var(--pr-color);
+    }
+    .contact-card .card .form-side{
+        padding: 4em 2em;
     }
 }
