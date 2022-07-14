@@ -37,21 +37,48 @@ body{
     margin: 0 0.3em;
     color: var(--pr-color);
 }
-
-.btn-client{
+.client-buttons{
+    overflow: hidden;
+    border-radius: 35px;
+}
+.client-buttons:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.client-buttons .btn-client{
     background-color: var(--pr-color);
     padding: 0.5em 1em;
-    border-radius: 35px;
+    border-radius: 35px 0px 0px 35px;
     text-transform: uppercase;
     font-weight: 700;
+    width: 185px;
     color: #f0f0f0;
+    transition: .3s ease;
 }
-.btn-client span{
+.client-buttons .btn-client:nth-child(2){
+    position: relative;
+    border-radius: 0px 35px 35px 0px;
+}
+.client-buttons .btn-client:nth-child(2)::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -1px;
+    height: 105%;
+    width: 2px;
+    background-color: #f0f0f0;
+}
+.client-buttons .btn-client span{
     padding-right: 1em;
 }
-.btn-client:hover{
-    box-shadow: inset 4px 4px #21aeff, inset -4px -4px #1074ad, rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.client-buttons .btn-client:nth-child(2) span{
+    padding-right: 0;
+    padding-left: 1em;
+}
+.client-buttons .btn-client:hover{
+    box-shadow: inset 4px 4px #21aeff, inset -4px -4px #1074ad;
+    text-decoration: underline;
     color: #fff;
+    width: 200px;
 }
 
 .navbar-dark .navbar-toggler-icon{
@@ -141,7 +168,7 @@ body{
 
 /* SERVICES */
 .services-tab{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .services-tab > div{
     background-color: #fff;
@@ -156,13 +183,10 @@ body{
     justify-content: center;
     align-items: center;
     border: none;
-    box-shadow: inset rgba(0, 0, 0, 0.07) -3px 3px 4px;
+    box-shadow: inset rgba(0, 0, 0, 0.07) 3px 3px 4px;
     background-color: #f0f0f0;
     color: var(--sec-color);
     transition: .2s ease;
-}
-.services-tab .tabs-btn:nth-child(1){
-    border-top: none;
 }
 .services-tab .tabs-btn i{
     opacity: .5;
