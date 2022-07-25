@@ -103,6 +103,7 @@ body{
 /* SLIDER */
 .carousel-item img{
     height: 75vh;
+    min-height: 500px;
     object-fit: cover;
 }
 .carousel-header{
@@ -472,6 +473,9 @@ footer .map-span{
         width: 1.5em; 
         height: 1.5em;
     }
+    .client-buttons .btn-client{
+        font-size: 0.8rem;
+    }
     .carousel-header .carousel-sub-title{
         width: 100%;
     }
@@ -486,6 +490,20 @@ footer .map-span{
     }
     .tab-hero{
         border: 3px solid var(--pr-color);
+    }
+    .about-text{
+        font-size: 1.2em;
+        padding: 1em 0.5em;
+        border-width: 5px;
+    }
+    .contact-card .card .list-contact li{
+        flex-direction: column;
+    }
+    .contact-card .card .list-contact li >:not(.icon-wrapp){
+        font-size: 1em;
+    }
+    .contact-card .card .list-contact li .icon-wrapp{
+        border: none;
     }
     .contact-card .card .form-side{
         padding: 4em 2em;
