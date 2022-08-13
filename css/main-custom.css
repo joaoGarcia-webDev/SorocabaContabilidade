@@ -92,12 +92,24 @@ body{
     transition: 0.3s ease;
 }
 .links-ul .nav-item .nav-link{
+    position: relative;
     font-size: 1.2em;
     color: #f0f0f0;
     padding: 0.5em 1em;
 }
-.links-ul .nav-item .nav-link:hover{
-    border-bottom: 3px solid var(--pr-color);
+.links-ul .nav-item .nav-link::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background-color: var(--pr-color);
+    transition: 0.3s ease;
+}
+.links-ul .nav-item:hover .nav-link::after{
+    width: 80%;
 }
 
 /* SLIDER */
